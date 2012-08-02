@@ -1,0 +1,63 @@
+<!doctype html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Phrappe.com - Lights Off demo</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+	<!-- IE HTML5 shiv --> 
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+	<!-- Favicons --> 
+	<link rel="shortcut icon" href="http://www.tsevdos.com/wp-content/themes/ambrosia/favicon.ico">
+	<link rel="apple-touch-icon" href="http://www.tsevdos.com/wp-content/themes/ambrosia/apple-touch-icon.png">
+
+	<!-- Google Font API - Load Ubuntu font-->
+	<link  href="http://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold,bolditalic&subset=greek,latin" rel="stylesheet" type="text/css" >
+	
+	<!-- Main Style -->
+	<link rel="stylesheet" href="http://phrappe.com/demos/style.css">
+	<style type="text/css">
+		.lightsoff { padding:10px; background:#fff; }
+	</style>
+	
+	<!-- Javascripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="jquery.lightsoff.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('.lightsoff').lightsOff();
+	});
+	</script>
+
+</head>
+
+<body class="demo">
+
+<div id="container">
+
+	<div class="html5video lightsoff">
+		<video id="video" width="320" height="240" preload="" controls="">
+			<source src="http://diveintohtml5.org/i/pr6.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;" />
+			<source src="http://diveintohtml5.org/i/pr6.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;" />
+			<source src="http://diveintohtml5.org/i/pr6.mp4" />
+		</video>
+	</div>
+	
+	<div class="youtubevideo lightsoff">
+		<iframe width="420" height="345" src="http://www.youtube.com/embed/pQYMo0Nb4oE" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<div class="miscdiv lightsoff">
+		<h1>Eiffel Tower</h1>
+		<img src="http://farm7.static.flickr.com/6187/6069489214_f2812c6963.jpg" alt="Eiffel Tower" >
+		<p>Picture from my last vacations...</p>
+	</div>
+	
+</div>
+
+</body>
+</html>
